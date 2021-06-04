@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2021 by cybortybor (http://jsbin.com/xeyimuj/4/edit)
+Copyright (c) 2021 by cybortybor (http://jsbin.com/xeyimuj/5/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -29,9 +29,9 @@ html, body {
   text-align: center;
   position: relative;
   top: 50%;
-  font-family: 'Heebo', sans-serif;
-  font-size: 96px;
-  margin-top: -48px;
+  font: 700 120px 'Heebo', sans-serif;
+  margin-top: -60px;
+  color: white;
 }
 
 </style>
@@ -57,7 +57,7 @@ html, body {
   }
 
   var clockFace = hours + ':' + minutes + ':' + seconds;
-  var hexColor = '#' + hours + minutes + seconds;
+  var hexColor = '#' + seconds + hours;
 
   document.getElementById('clock').innerHTML = clockFace;
   document.body.style.background = hexColor;
